@@ -1,0 +1,18 @@
+[
+  {
+    "attributes": [
+      {
+        "name": "sample_attribute_0",
+        "value": "sample_attribute_value_0"
+      }
+    ],
+    "developerEmail": "test@test.com",
+    "name": "test-dev-name",
+    "displayName": "test-dev-displayName",
+    "callbackUrl": "",
+    "apiProducts": [
+      "test"
+    ],
+    "expiryType": "never"
+  }
+]

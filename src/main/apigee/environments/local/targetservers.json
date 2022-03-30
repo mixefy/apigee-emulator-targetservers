@@ -1,0 +1,10 @@
+[
+    {
+        "name": "sample-backend",
+        "host": "httpbin.org",
+        "port": 443,
+        "sSLInfo": {
+            "enabled": "true"
+        }
+    }
+]

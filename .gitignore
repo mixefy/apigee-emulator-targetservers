@@ -1,0 +1,6 @@
+.idea
+.vscode
+*.private.*
+
+# This folder gets updated on each test deployment:
+target

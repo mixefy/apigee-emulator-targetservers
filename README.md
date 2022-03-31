@@ -1,11 +1,15 @@
 # apigee-emulator-targetservers
-Minimal PoC for using emulator with targetservers question
+Minimal PoC for using emulator with targetservers question.
 
-Trying to use TargetServers to decouple concrete endpoint URLs from TargetEndpoint configurations, as specified here: https://cloud.google.com/apigee/docs/api-platform/deploy/load-balancing-across-backend-servers
+Trying to use TargetServers to decouple concrete endpoint URLs from TargetEndpoint configurations, as specified here: https://cloud.google.com/apigee/docs/api-platform/deploy/load-balancing-across-backend-servers .
 
-When developing locally using VSCode plugin. Apigee runtime version: 1.6.1, I'm getting "plpain HTTP request was sent to HTTPS port" when trying to hit HTTPS backends.
+When developing locally using VSCode plugin, I'm getting "plain HTTP request was sent to HTTPS port" when trying to hit HTTPS backends.
 
-Restarting the emulator didn't help.
+This is working fine when deploying to apigee.google.com. However, when developing locally using VSCode plugin, I'm getting "plain HTTP request was sent to HTTPS port" when trying to hit HTTPS backends.
+
+Apigee emulator runtime version: 1.6.1.
+
+Restarting/resetting the emulator doesn't help.
 
 
 [apiproxies/sample-v1/apiproxy/targets/default.xml](./src/main/apigee/apiproxies/sample-v1/apiproxy/targets/default.xml):
@@ -78,4 +82,4 @@ I'm getting the following response:
 * Connection #0 to host 127.0.0.1 left intact
 ```
 
-Post on Apigee forum: https://www.googlecloudcommunity.com/gc/Apigee/Getting-quot-plain-HTTP-request-was-sent-to-HTTPS-port-quot-when/m-p/408443
+Post on Apigee forum: https://www.googlecloudcommunity.com/gc/Apigee/Getting-quot-plain-HTTP-request-was-sent-to-HTTPS-port-quot-when/m-p/408443 .
